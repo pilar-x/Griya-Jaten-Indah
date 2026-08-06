@@ -162,11 +162,11 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
     return saved ? JSON.parse(saved) : initialNotifications;
   });
 
-  const [activeRole, setActiveRole] = useState<UserRole>("Pemilik");
+  const [activeRole, setActiveRole] = useState<UserRole>("Calon Penghuni");
   const [darkMode, setDarkMode] = useState<boolean>(() => {
     return localStorage.getItem("gji_dark_mode") === "true";
   });
-  const [activeView, setActiveView] = useState<string>("dashboard");
+  const [activeView, setActiveView] = useState<string>("calon-penghuni");
   const [searchQuery, setSearchQuery] = useState<string>("");
 
   const [aiNarrative, setAiNarrative] = useState<string>("");
