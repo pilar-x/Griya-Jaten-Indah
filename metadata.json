@@ -1,0 +1,6 @@
+{
+  "name": "GRIYA JATEN INDAH (GJI)",
+  "description": "Smart Kost Management System - Progressive Web App untuk Griya Jaten Indah",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
