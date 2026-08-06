@@ -105,7 +105,7 @@ const AppContent: React.FC = () => {
   };
 
   return (
-    <div className={`min-h-screen ${darkMode ? "dark bg-[#07140f] text-slate-100" : "bg-[#e5efe9] text-slate-800"} font-sans antialiased transition-colors duration-200`}>
+    <div className={`min-h-screen ${darkMode ? "dark bg-[#07140f] text-slate-100" : "bg-[#f5eedc] text-black"} font-sans antialiased transition-colors duration-200`}>
       <Header />
       <div className="flex flex-col md:flex-row w-full min-h-[calc(100vh-65px)]">
         <Sidebar />
