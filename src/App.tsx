@@ -39,13 +39,12 @@ const AppContent: React.FC = () => {
     paymentGatewayDefaultAmount,
   } = useApp();
 
-  // Public views accessible without PIN (Strictly 5 safe features for Calon Penghuni)
+  // Public views accessible without PIN (Strictly 4 safe public features for Calon Penghuni)
   const isPublicView =
     activeView === "calon-penghuni" ||
     activeView === "denah" ||
     activeView === "tata-tertib" ||
-    activeView === "maps" ||
-    activeView === "ai";
+    activeView === "maps";
 
   // Protected Views requiring Owner PIN verification
   const isOwnerProtectedView = !isPublicView;

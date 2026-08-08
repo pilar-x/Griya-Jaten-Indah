@@ -26,7 +26,7 @@ import {
 export const Sidebar: React.FC = () => {
   const { activeView, setActiveView, isOwnerUnlocked, lockOwnerAccess } = useApp();
 
-  // 5 Fitur umum publik khusus Calon Penghuni
+  // 4 Fitur umum publik khusus Calon Penghuni
   const publicMenuItems = [
     {
       id: "calon-penghuni",
@@ -56,20 +56,13 @@ export const Sidebar: React.FC = () => {
       desc: "Integrasi Google Maps",
       icon: MapPinIcon,
     },
-    {
-      id: "ai",
-      label: "Tanya AI Kost",
-      desc: "Asisten Cerdas 24/7",
-      icon: SparklesIcon,
-      badge: "AI",
-      highlight: true,
-    },
   ];
 
   // Menu Manajemen Pemilik Kost (Hanya tampil jika sudah dibuka PIN)
   const ownerMenuItems = [
     { id: "pemilik-executive", label: "Pemilik Executive", icon: ShieldCheckIcon, badge: "VIP" },
     { id: "dashboard", label: "Dashboard Manajerial", icon: HomeIcon },
+    { id: "ai", label: "Tanya AI Kost (Smart AI)", icon: SparklesIcon, badge: "AI" },
     { id: "penghuni", label: "Data Penghuni", icon: UserGroupIcon },
     { id: "rumah", label: "Data Rumah Kost", icon: BuildingOffice2Icon },
     { id: "kamar", label: "Data Kamar", icon: KeyIcon },
